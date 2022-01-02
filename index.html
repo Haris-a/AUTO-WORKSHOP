@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="Style.css" type="text/css">
+    <title>AUTO-WORKSHOP.com</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.74.4/dist/L.Control.Locate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+
+    <style>
+        #map{
+            height: 660px;
+            width: 1110px;
+
+            margin: 0rem auto;   
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="Index.html"> 
+                                <img src="mechanic.png">   
+                            </a>
+                        </div>
+                        <button class="navbar-toggler" data-toggle="collapse" data-target="#NAVBAR">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="NAVBAR">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://drive.google.com/file/d/1_X7BQZVyhOhVGV4GuHY45G9muvOwx06m/view?usp=sharing">ABOUT</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://github.com/Haris-a/Your-Honest-Mechanic">GITHUB</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="http://127.0.0.1:5500/try.html">MAP</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://drive.google.com/file/d/12Xg4-CYYjX_b6XQ7vM74qpuaHkASByr_/view?usp=sharing">AOI</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://drive.google.com/file/d/1DuVMHTWVi6NRN4UWr1ol2vvT3gED9VvO/view?usp=sharing">Elevation</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://drive.google.com/file/d/1DnbTm8sKDaNRaHdLGxu4KQ5KyjaqG0ZM/view?usp=sharing">LULC</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://drive.google.com/file/d/1I3XlKg7fh9sLzlpS6acEz_mQbcDD_-aT/view?usp=sharing">SrinagarHighway</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://drive.google.com/file/d/1HdQfTmKZPMLQyc2pPmhjkdCBZGD-gCY9/view?usp=sharing">Expressway</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+ 
+    <div id="map"></div>
+    <div>
+        <img src="images/AOI.jpg" width="1110" height="840"class="picRight" >
+        <img src="images/ELEVATION.jpg" width="1110" height="840"class="picRight">
+        <img src="images/L_U_L_C.jpg" width="1110" height="840"class="picRight" >
+        <img src="images/COST.jpg" width="1110" height="840"class="picRight" >
+        <img src="images/COST1.jpg" width="1110" height="840"class="picRight" >
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.74.0/dist/L.Control.Locate.min.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <script src="main.js"></script>
+    
+</body>
+</html>
